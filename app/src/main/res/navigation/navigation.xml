@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/productsFragment">
+
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.tomasvazquez.myapplication.ui.screen.products.ProductsFragment"
+        android:label="@string/title_products"
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_productsFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.tomasvazquez.myapplication.ui.screen.detail.ProductDetailFragment"
+        android:label="@string/title_products_detail"
+        tools:layout="@layout/fragment_product_detail" >
+        <argument
+            android:name="sku"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>

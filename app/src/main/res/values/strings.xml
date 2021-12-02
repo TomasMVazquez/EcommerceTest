@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EcommerceTest</string>
+    <string name="title_products">Productos</string>
+    <string name="title_products_detail">Detalle</string>
+
+<!--    CustomView InfoState-->
+    <string name="content_description_empty_state">Imagen de estado vacío</string>
+    <string name="emtpy">Oops... \n Parece que no encontramos ninguna transacción</string>
+    <string name="conection_error">Oops... \n Parece que no tienes buena conexión</string>
+    <string name="other">Oops... \n Parece que algo salió mal</string>
+    <string name="title_detail">Detalle de transacciones del SKU: %s</string>
+    <string name="title_amount">Total EUR:</string>
+    <string name="title_count">Cantidad:</string>
+
+</resources>
